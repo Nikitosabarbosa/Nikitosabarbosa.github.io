@@ -11,8 +11,24 @@
 
     <div class="calc">
       <div class="window">
-        <input type="text" placeholder="Доллар" id="DollarInput" />
+        <input
+          type="text"
+          placeholder="Доллар"
+          id="DollarInput"
+          onclick="buttons()"
+        />
         <input type="text" placeholder="Рубль" id="RubInput" />
+        <div class="calcButtons">
+          <button id="1" class="hidden" onclick="printOne()">1</button>
+          <button id="2" class="hidden" onclick="printTwo()">2</button>
+          <button id="3" class="hidden" onclick="printThree()">3</button>
+          <button id="4" class="hidden" onclick="printFour()">4</button>
+          <button id="5" class="hidden" onclick="printFive()">5</button>
+          <button id="6" class="hidden" onclick="printSix()">6</button>
+          <button id="7" class="hidden" onclick="printSeven()">7</button>
+          <button id="8" class="hidden" onclick="pritnEight()">8</button>
+          <button id="9" class="hidden" onclick="printNine()">9</button>
+        </div>
       </div>
       <button id="button" onclick="calc()">Далее</button>
     </div>

@@ -46,4 +46,9 @@ input {
 .window {
   display: flex;
   justify-content: center;
+  flex-direction: column;
+}
+
+.hidden {
+  display: none;
 }
