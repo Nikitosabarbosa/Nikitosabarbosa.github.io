@@ -18,16 +18,18 @@
           onclick="buttons()"
         />
         <input type="text" placeholder="Рубль" id="RubInput" />
-        <div class="calcButtons">
-          <button id="1" class="hidden" onclick="printOne()">1</button>
-          <button id="2" class="hidden" onclick="printTwo()">2</button>
-          <button id="3" class="hidden" onclick="printThree()">3</button>
-          <button id="4" class="hidden" onclick="printFour()">4</button>
-          <button id="5" class="hidden" onclick="printFive()">5</button>
-          <button id="6" class="hidden" onclick="printSix()">6</button>
-          <button id="7" class="hidden" onclick="printSeven()">7</button>
-          <button id="8" class="hidden" onclick="pritnEight()">8</button>
-          <button id="9" class="hidden" onclick="printNine()">9</button>
+        <div id="keyboard" class="calcButtons hidden">
+          <button onclick="printNumber(event)">1</button>
+          <button onclick="printNumber(event)">2</button>
+          <button onclick="printNumber(event)">3</button>
+          <button onclick="printNumber(event)">4</button>
+          <button onclick="printNumber(event)">5</button>
+          <button onclick="printNumber(event)">6</button>
+          <button onclick="printNumber(event)">7</button>
+          <button onclick="printNumber(event)">8</button>
+          <button onclick="printNumber(event)">9</button>
+          <button id="button0" onclick="printNumber(event)">0</button>
+          <button onclick="clearInput()">C</button>
         </div>
       </div>
       <button id="button" onclick="calc()">Далее</button>

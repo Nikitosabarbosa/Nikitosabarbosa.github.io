@@ -31,59 +31,15 @@ async function getUsdToRubRate() {
 }
 
 function buttons() {
-  let button1 = document.getElementById("1");
-  let button2 = document.getElementById("2");
-  let button3 = document.getElementById("3");
-  let button4 = document.getElementById("4");
-  let button5 = document.getElementById("5");
-  let button6 = document.getElementById("6");
-  let button7 = document.getElementById("7");
-  let button8 = document.getElementById("8");
-  let button9 = document.getElementById("9");
-  button1.classList.remove("hidden");
-  button2.classList.remove("hidden");
-  button3.classList.remove("hidden");
-  button4.classList.remove("hidden");
-  button5.classList.remove("hidden");
-  button6.classList.remove("hidden");
-  button7.classList.remove("hidden");
-  button8.classList.remove("hidden");
-  button9.classList.remove("hidden");
-  console.dir(button1);
+  let button = document.getElementById("keyboard");
+  button.classList.remove("hidden");
 }
 
-function printOne() {
-  dollar.value += "1";
+function printNumber(event) {
+  dollar.value += event.srcElement.innerText;
 }
 
-function printTwo() {
-  dollar.value += "2";
-}
-
-function printThree() {
-  dollar.value += "3";
-}
-
-function printFour() {
-  dollar.value += "4";
-}
-
-function printFive() {
-  dollar.value += "5";
-}
-
-function printSix() {
-  dollar.value += "6";
-}
-
-function printSeven() {
-  dollar.value += "7";
-}
-
-function printEight() {
-  dollar.value += "8";
-}
-
-function printNine() {
-  dollar.value += "9";
+function clearInput() {
+  dollar.value = "";
+  rub.value = "";
 }

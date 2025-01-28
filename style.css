@@ -5,7 +5,7 @@ body {
 }
 
 input {
-  border-radius: 0;
+  border-radius: 20px;
   border: 1px black solid;
   padding: 7px 10px;
   outline: 0;
@@ -47,8 +47,21 @@ input {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  border: 3px black solid;
+  padding: 20px;
+  border-radius: 10px;
 }
 
 .hidden {
-  display: none;
+  opacity: 0;
+}
+
+.calcButtons {
+  display: grid;
+  width: 90px;
+  grid-template-columns: 30px 30px 30px;
+}
+
+#button0 {
+  grid-column: 2;
 }
